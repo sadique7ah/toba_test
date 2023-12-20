@@ -1,0 +1,205 @@
+/* index page */
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 15px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #b7934f;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.prf-button {
+    background-color: #b7934f;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.prf-button:hover {
+    background-color: #92753f;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #92753f;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #92753f;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;    
+}
+
+.hero-section.home-page {
+    background-image: url(toba.jpg);
+}
+
+
+.hero-section.about-page {
+    background-image: url(toba.jpg);  
+}
+
+
+.hero-section.vanilla-page {
+    background-image: url(toba.jpg);  
+}
+
+.hero-section.honey-page {
+    background-image: url(toba.jpg);  
+}
+
+.hero-section.betelnut-page {
+    background-image: url(toba.jpg);  
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.hero-section h3 {
+    font-size: 1em;
+    text-align: center;
+}
+
+.hero-section p {
+    font-size: .5em;
+    text-align: center;
+    width: 60%;
+    height: auto;
+}
+
+.card-text {
+    padding: 5px 20px 5px 20px;
+    text-align: justify;
+}
+
+.custom-btn {
+    background-color: #b7934f;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.custom-btn:hover {
+    background-color: #92753f;
+}
+
+
+/* others page section style */
+
+/* Section styles */
+
+/* Image styles */
+.sec-img img {
+    padding: 5%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Add a smooth transition for the zoom effect */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Add a hover effect for zooming in */
+.sec-img img:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the zoom effect */
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 767px) {
+    .two-col-sec {
+        padding: 30px 0; /* Adjust as needed for smaller screens */
+    }
+
+    /* Center the image vertically in the mobile view */
+    .sec-img img {
+        margin-top: 15px; /* Adjust the top margin as needed */
+    }
+}
+
+/* product descrtiption text box under porduct pages */
+
+.scrollable-textbox {
+    max-width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    overflow-y: auto; /* This enables vertical scrolling */
+    border: 1px solid #ccc; /* Optional: adds a border around the text box */
+    padding: 10px; /* Optional: adds some space inside the box */
+    margin-top: 10px; /* Optional: adds space above the box */
+    padding: 20px;
+    text-align: justify;
+    border-radius: 5px;
+}
+
+.scrollable-textbox h2{
+    font-size: 20px;
+}
+.scrollable-textbox h3{
+    font-size: 18px;
+}

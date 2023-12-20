@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toba tropical</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="stylefile/style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="#">
+                <img src="stylefile/logo.png" alt="logo" width="35" height="35" class="d-inline-block align-text-top">
+                Toba Tropica
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Toba Tropical</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#card">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="stylefile/thd_profile_en.pdf" class="prf-button">Profile</a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero section -->
+    <section class="hero-section home-page">
+        <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+            <h1>Toba Tropica</h1>                      
+            <h3>Harvested with Care Exported with Trust</h3>           
+            <p>Vanilla / Coconut / Betel nut</p>  
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+
+    <!-- products card -->
+
+    <div class="container text-center py-5 px-5" id="card">
+        <br>
+        <br>
+        <h3>Our Prducts</h3>
+        <h4 class="text-muted">Vanila, Coconut and Betelnut</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 px-1 py-1">
+            <div class="col">
+                <div class="card shadow">
+                    <img src="stylefile/vanilla.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Vanilla</h5>
+                      <p class="card-text">Toba Tropica offers Export-Grade Vanilla for your ultimate business advantage. Our carefully nurtured beans has the purest essence which will ensure the competitive edge for your venture</p>
+                      <a href="prod-vanilla.html" class="custom-btn">Learn More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="stylefile/coconut.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Coconut</h5>
+                      <p class="card-text">Toba Tropica's coconuts meet export quality standards, ensuring prosperity for your business. Through a highly sophisticated selective approach, we offer our finest coconuts to meet your needs.</p>
+                      <a href="prod-coconut.html" class="custom-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="stylefile/betelnut.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Betel nut</h5>
+                      <p class="card-text">Toba Tropica has extensive expertise in the betel nut industry, from cultivation to export. Our firm commitment to quality sets us apart, establishing a distinctive identity in the betel nut business.</p>
+                      <a href="prod-betelnut.html" class="custom-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <!-- products card end-->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@tobatropical.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i>LinkedIn</a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i>Facebook</a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i>WhtasApp</a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i>Instagram</a>
+                </div>
+                <div class="col-md-4 py-2">
+                    <h5>Address</h5>
+                    <p>123 Street, City, Country</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+<!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
